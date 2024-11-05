@@ -1,5 +1,5 @@
 *********************************************************************** 
-* OBJETIVOS: LE DDNAME ENTRADA E IMPRIME NO DDNAME SAIDA 04/04/2024     
+* OBJETIVOS: LE DDNAME ENTRADA E IMPRIME NO DDNAME SAIDA - 04/11/2024     
 *********************************************************************** 
 * PROCEDIMENTOS DE INICIALIZAÇÃO DO PROGRAMA (LINKAGE CONVENTION)       
 *********************************************************************** 
