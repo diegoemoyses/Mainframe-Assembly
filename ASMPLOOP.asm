@@ -1,6 +1,7 @@
 *********************************************************************** 
 * OBJETIVOS: LOOP GRAVANDO O VALOR          06/11/2024                  
-*          : AJUSTE PARA MELHOR COMPREENSAO 12/11/2024                  
+*          : AJUSTE PARA MELHOR COMPREENSAO 12/11/2024      
+*          : OTIMIZACAO DO CODIGO           20/11/2024              
 *********************************************************************** 
 * PROCEDIMENTOS DE INICIALIZAÇÃO DO PROGRAMA (LINKAGE CONVENTION)       
 *********************************************************************** 
@@ -18,20 +19,15 @@ ASMPLOOP CSECT
 * CORPO DO PROGRAMA                                                     
 *********************************************************************** 
          OPEN  (SAIDA,OUTPUT)                                           
-*                                                                       
-         LA    R2,10                                                    
-         PACK  NAP,NUMA                                                 
-         PACK  N1P,NUM01                                                
-*                                                                       
-*        LA    R3,0                                                     
-*        CVB   R4,N1P                                                   
-                                                                        
+         ZAP   LIMITE,P'10'                                             
+         CVB   R2,LIMITE                                                
 *                                                                       
 LOOP     EQU   *                                                        
-         AP    NAP,N1P                                                  
-         MVC   MSGOUT,=X'202020'                                        
-         ED    MSGOUT,NAP                                               
-         MVI   MSGOUT+5,C'N'                                            
+         CVD   R2,TRAB                                                  
+         SP    TRAB,LIMITE                                              
+*        AP    TRAB,=P'1'                                               
+         UNPK  MSGOUT,TRAB                                              
+         OI    MSGOUT+3,X'F0'                                           
          PUT   SAIDA,MSG                                                
          BCT   R2,LOOP                                                  
 *                                                                       
@@ -48,44 +44,44 @@ ASMPLOOP_MODULO_RETORNA_OK    DS  0H
 * DEFINIÇÃO DE ÁREAS DE DADOS                                           
 *********************************************************************** 
 *                                                                       
-NUM01    DC    CL2'01'                                                  
-NUMA     DC    CL2'00'                                                  
-*                                                                       
-N1P      DS    PL2                                                      
-NAP      DS    PL2                                                      
+LIMITE   DS    PL8                                                      
+TRAB     DS    PL8                                                      
 *                                                                       
 MSG      DS    0CL80                                                    
          DC    CL1' '                                                   
-MSGOUT   DS    CL6                                                      
-         DC    59CL1' '                                                 
+MSGOUT   DS    CL4                                                      
+         DC    CL1' '                                                   
+MSGOUX   DS    CL4                                                      
+         DC    CL1' '                                                   
+         DC    60CL1' '                                                 
 *                                                                       
-* AREA DE MEMORIA DCB APONTANDO PARA O DDNAME SAIDA                     
-SAIDA    DCB   DDNAME=SAIDA,                                           X
-               DSORG=PS,                                               X
-               MACRF=PM,                                               X
-               LRECL=80,                                               X
-               BLKSIZE=4000,                                           X
-               RECFM=FBA                                                
-*                                                                       
-ASMPLOOP_SAVE_AREA              DS  18F                                 
-*                                                                       
-R0       EQU   0                                                        
-R1       EQU   1                                                        
-R2       EQU   2                                                        
-R3       EQU   3                                                        
-R4       EQU   4                                                        
-R5       EQU   5                                                        
-R6       EQU   6                                                        
-R7       EQU   7                                                        
-R8       EQU   8 
-R9       EQU   9 
-R10      EQU  10 
-R11      EQU  11 
-R12      EQU  12 
-R13      EQU  13 
-R14      EQU  14 
-R15      EQU  15 
-*                
-         LTORG   
-*                
-         END     
+* AREA DE MEMORIA DCB APONTANDO PARA O DDNAME SAIDA                     		 
+SAIDA    DCB   DDNAME=SAIDA,                                          
+               DSORG=PS,                                              
+               MACRF=PM,                                              
+               LRECL=80,                                              
+               BLKSIZE=4000,                                          
+               RECFM=FBA                                              
+*                                                                     
+ASMPLOOP_SAVE_AREA              DS  18F                               
+*                                                                     
+R0       EQU   0                                                      
+R1       EQU   1                                                      
+R2       EQU   2                                                      
+R3       EQU   3                                                      
+R4       EQU   4                                                      
+R5       EQU   5                                                      
+R6       EQU   6                                                      
+R7       EQU   7                                                      
+R8       EQU   8                                                      
+R9       EQU   9                                                      
+R10      EQU  10                                                      
+R11      EQU  11                                                      
+R12      EQU  12                                                      
+R13      EQU  13                                                      
+R14      EQU  14                                                      
+R15      EQU  15                                                      
+*                                                                     
+         LTORG                                                        
+*                                                                     
+         END
