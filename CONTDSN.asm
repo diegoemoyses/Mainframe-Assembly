@@ -3,6 +3,7 @@
 *            EXIBE A QTD DE REGISTROS NO CARTAO SYSPRINT                
 *            SE HOUVER REGISTROS RC 0                                   
 *            SE NAO HOUVER REGISTROS RC 99                              
+*21/11/2024  OTIMIZACAO DO CODIGO 	                                   
 *********************************************************************** 
 * PROCEDIMENTOS DE INICIALIZAÇÃO DO PROGRAMA (LINKAGE CONVENTION)       
 *********************************************************************** 
@@ -21,18 +22,17 @@ CONTDSN  CSECT
 *********************************************************************** 
          OPEN  (ARQ,INPUT)                                              
          OPEN  (SYSPRINT,OUTPUT)                                        
-         PACK  NAP,NUMA                                                 
-         PACK  N1P,NUM01                                                
+         ZAP   NAP,=P'0'                                                
 *                                                                       
-LERARQ   EQU   *                                                        
+LERARQ   EQU   *      
          GET   ARQ,DADOARQ                                              
-         AP    NAP,N1P                                                  
+         AP    NAP,=P'1'                                                
          B     LERARQ                                                   
 *                                                                       
 FIMARQ   EQU   *                                                        
          CLOSE ARQ                                                      
-         MVC   MSGOUT,=X'40204B2020204B20212060'                        
-         ED    MSGOUT,NAP                                               
+         UNPK  MSGOUT,NAP                                               
+         OI    MSGOUT+10,X'F0'                                          
          PUT   SYSPRINT,MSG                                             
          CLOSE SYSPRINT                                                 
          ZAP   TRAB,NAP                                                 
@@ -51,18 +51,15 @@ CONTDSN_MODULO_RETORNA_OK     DS  0H
 RET99    EQU   *                                                        
          L     R13,CONTDSN_SAVE_AREA+4                                  
          LM    R14,R12,12(R13)                                          
-         LA    R15,99                                                   
+         LA    R15,99                                                                                                     
          BR    R14                                                      
 *********************************************************************** 
 * DEFINIÇÃO DE ÁREAS DE DADOS                                           
 *********************************************************************** 
-*                                                                       
-NUM01    DC    CL2'01'                                                  
-NUMA     DC    CL2'00'                                                  
-*                                                                       
+*                                                                                                                                                                                               
 DADOARQ  DS    CL80                                                     
 *                                                                       
-N1P      DS    PL4                                                      
+*1P      DS    PL4                                                      
 NAP      DS    PL4                                                      
 TRAB     DS    PL8                                                      
 *                                                                       
@@ -106,9 +103,9 @@ R10      EQU  10
 R11      EQU  11                                                        
 R12      EQU  12                                                        
 R13      EQU  13                                                        			   
-R14      EQU  14   
-R15      EQU  15   
-*                  
-         LTORG     
-*                  
-         END       
+R14      EQU  14  
+R15      EQU  15  
+*                 
+         LTORG    
+*                 
+         END      
