@@ -10,7 +10,7 @@
 
 * **Mediana**: o valor central de um conjunto de dados.
 
-* **Média aritmética (simples):** a soma de todos os dados do conjunto divido pela quantidade de elementos.
+* **Média aritmética (simples):** a soma de todos os dados do conjunto dividido pela quantidade de elementos.
 
 <br>
 
