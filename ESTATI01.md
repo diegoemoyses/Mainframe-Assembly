@@ -3,7 +3,7 @@
 ### Definição da medidas de tendências centrais:
 <br>
 
->São usadas para resumir os dados em torno de um valor típico da amostra. Essas medidas consistem em uma parte fundamental da estatística descritiva, isto é, quando almejamos sumarizar e dar sentido aos dados que temos em mãos.  - <a href="https://www.blog.psicometriaonline.com.br/medidas-de-tendencia-central-media-mediana-e-moda"/>Psicometria.online</a> 
+>São usadas para resumir os dados em torno de um valor típico da amostra. Essas medidas consistem em uma parte fundamental da estatística descritiva, isto é, quando almejamos sumarizar e dar sentido aos dados que temos em mãos. 
 <br>
 
 * **Moda:** valor com a maior ocorrência no conjudo de dados.
