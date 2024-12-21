@@ -6,8 +6,8 @@
 //*                                                                  
 //* OBS: OS NUMEROS PRECISAM ESTAR NO FORMATO NNNNDD                 
 //*      OS ZEROS A ESQUERDA DEVEM SER INFORMADOS                    
-//*      N - REPRESTA NUMERO INTEIRO                                 
-//*      D - REPRESTA NUMERO DECIMAL                                 
+//*      N - REPRESENTA NUMERO INTEIRO                                 
+//*      D - REPRESENTA NUMERO DECIMAL                                 
 //********************************************************           
 //*                                                                  
 //* STEP01 -  SORT PARA ORDENAR OS NUMEROS                           
