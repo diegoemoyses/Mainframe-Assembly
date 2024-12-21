@@ -2,9 +2,9 @@
 * OBJETIVOS: CALCULAR A MODA, MEDIA E MEDIANA DO CONJUNTO DE DADOS
 *            INFORMADO NO CARTAO ENTRADA.
 *       OBS: O CONJUNTO DE DADOS PRECISA ESTAR ORDENADO.
-*17/12/2024: CRICAO DO PROGRAMA.
+*17/12/2024: CRIACAO DO PROGRAMA.
 ***********************************************************************
-* PROCEDIMENTOS DE INICIALIZA«√O DO PROGRAMA (LINKAGE CONVENTION)
+* PROCEDIMENTOS DE INICIALIZA√á√ÉO DO PROGRAMA (LINKAGE CONVENTION)
 ***********************************************************************
 ESTATI01 AMODE 31
 ESTATI01 RMODE 24
@@ -159,7 +159,7 @@ MEDIANAIMPAR EQU *
          MVC   MSG+9(6),DADOIN
          PUT   SAIDA,MSG
 ***********************************************************************
-* PROCEDIMENTOS DE FINALIZA«√O DO PROGRAMA (LINKAGE CONVENTION)
+* PROCEDIMENTOS DE FINALIZA√á√ÉO DO PROGRAMA (LINKAGE CONVENTION)
 ***********************************************************************
 FIM_PGM  EQU   *
          MVC   MSG,=80CL1' '
@@ -172,7 +172,7 @@ FIM_PGM  EQU   *
          BR    R14
 *
 ***********************************************************************
-* DEFINI«√O DE ¡REAS DE DADOS
+* DEFINI√á√ÉO DE √ÅREAS DE DADOS
 ***********************************************************************
 *
 MSG      DS    CL80
