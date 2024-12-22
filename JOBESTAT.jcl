@@ -2,7 +2,7 @@
 //          REGION=0M,NOTIFY=&SYSUID,                                
 //          MSGCLASS=T,MSGLEVEL=1,CLASS=A                            
 //********************************************************           
-//* CALCULO DA MEDIA DE TENDENCIAS CENTRAIS                          
+//* CALCULO DA MEDIDA DE TENDENCIAS CENTRAIS                          
 //*                                                                  
 //* OBS: OS NUMEROS PRECISAM ESTAR NO FORMATO NNNNDD                 
 //*      OS ZEROS A ESQUERDA DEVEM SER INFORMADOS                    
