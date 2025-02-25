@@ -1,11 +1,11 @@
-/JOBBLN01   JOB    ('00'),TSO.&SYSUID,NOTIFY=&SYSUID,                  
-/          MSGCLASS=T,MSGLEVEL=1,CLASS=A                               
-/*                                                                     
-/*---------------------------------------------------------------------
-/STEP0001 EXEC PGM=ICEGENER,COND=(0,NE)                                
-/SYSPRINT DD   SYSOUT=*                                                
-/SYSOUT   DD   SYSOUT=*                                                
-/SYSUT1   DD   *                                                       
+//JOBBLN01   JOB    ('00'),TSO.&SYSUID,NOTIFY=&SYSUID,                  
+//          MSGCLASS=T,MSGLEVEL=1,CLASS=A                               
+//*                                                                     
+//*---------------------------------------------------------------------
+//STEP0001 EXEC PGM=ICEGENER,COND=(0,NE)                                
+//SYSPRINT DD   SYSOUT=*                                                
+//SYSOUT   DD   SYSOUT=*                                                
+//SYSUT1   DD   *                                                       
 21234ABREU DE SOUZA      000110200                                     
 23455JOAO DE DEUS        000006735                                     
 26754ALFREDO JR          000376400                                     
@@ -13,14 +13,14 @@
 52455LUIZ DE LIMA        000007499                                     
 25679HELENA DA LUZ       000024574                                     
 *                                                                      
-/SYSUT2   DD   DSN=&&ST01,                                             
-/         DISP=(,PASS),SPACE=(TRK,(10,10),RLSE),                       
-/         DCB=(LRECL=80,RECFM=FB,DSORG=PS),UNIT=3390                   
-/*---------------------------------------------------------------------
-/STEP0002 EXEC PGM=ICEGENER,COND=(0,NE)                                
-/SYSPRINT DD   SYSOUT=*                                                
-/SYSOUT   DD   SYSOUT=*                                                
-/SYSUT1   DD   *                                                       
+//SYSUT2   DD   DSN=&&ST01,                                             
+//         DISP=(,PASS),SPACE=(TRK,(10,10),RLSE),                       
+//         DCB=(LRECL=80,RECFM=FB,DSORG=PS),UNIT=3390                   
+//*---------------------------------------------------------------------
+//STEP0002 EXEC PGM=ICEGENER,COND=(0,NE)                                
+//SYSPRINT DD   SYSOUT=*                                                
+//SYSOUT   DD   SYSOUT=*                                                
+//SYSUT1   DD   *                                                       
 21234ABREU DE SOUZA      000281256                                     
 22419ANTONIA OLIVEIRA    000198422                                     
 52455LUIZ B. DE LIMA     00000205}                                     
