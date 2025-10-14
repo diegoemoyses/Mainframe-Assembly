@@ -1,5 +1,5 @@
 ***********************************************************************
-* OBJETIVOS: ALOACAO DINAMICA DE DSN - 13-10-2025
+* OBJETIVOS: ALOCACAO DINAMICA DE DSN COM BPXWDYN - 13-10-2025
 ***********************************************************************
 * PROCEDIMENTOS DE INICIALIZAÇÃO DO PROGRAMA (LINKAGE CONVENTION)
 ***********************************************************************
