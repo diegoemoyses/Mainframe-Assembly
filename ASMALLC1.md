@@ -17,7 +17,7 @@ https://www.ibm.com/docs/en/zos/2.4.0?topic=output-requesting-allocation-informa
 
 #### Resultado da execução do job  <a href="https://github.com/diegoemoyses/Mainframe-Assembly/blame/main/JOBPXWDY.jcl">JOBPXWDY.jcl</a>:<br><br>
           
-<strong>Step01</strong> - Exbindo a quantidade de registros do arquivo com a execução do programa <a href="https://github.com/diegoemoyses/Mainframe-Assembly/blame/main/CONTDSN.asm">CONTDSN</a>.
+<strong>Step01</strong> - Exibindo a quantidade de registros do arquivo com a execução do programa <a href="https://github.com/diegoemoyses/Mainframe-Assembly/blame/main/CONTDSN.asm">CONTDSN</a>.
 <br><br>
 ![Resultado.](https://github.com/diegoemoyses/Mainframe-Assembly/blob/main/JOBPXWDYstep01.png)
 
