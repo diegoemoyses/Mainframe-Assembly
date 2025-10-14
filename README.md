@@ -1,7 +1,7 @@
 # Mainframe-Assembly
 Programas em Assembly para a plataforma Mainframe IBM
 
-  * <a href="https://github.com/diegoemoyses/Mainframe-Assembly/blob/main/ASMALLC1">ASMALLC1.asm</a>&nbsp;&nbsp;&nbsp; - Demonstra o uso da macro <a href="https://www.ibm.com/docs/en/zos/2.4.0?topic=output-requesting-allocation-information">BPXWDYN</a> aonde um arquivo é divido  dinâmicamente em outros arquivos a cada 70 registros.<br><br>
+  * <a href="https://github.com/diegoemoyses/Mainframe-Assembly/blob/main/ASMALLC1.md">ASMALLC1.asm</a>&nbsp;&nbsp;&nbsp; - Demonstra o uso da macro <a href="https://www.ibm.com/docs/en/zos/2.4.0?topic=output-requesting-allocation-information">BPXWDYN</a> aonde um arquivo é divido  dinâmicamente em outros arquivos a cada 70 registros.<br><br>
  * <a href="https://github.com/diegoemoyses/Mainframe-Assembly/blob/main/PASMBLN1.md">PASMBLN1.asm</a>&nbsp;&nbsp;&nbsp; - Balance Line com ou sem correspondentes.<br><br>
  * <a href="https://github.com/diegoemoyses/Mainframe-Assembly/blob/main/ESTATI01.md">ESTATI01.asm</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Calcular as medidas de tendências centrais(moda, mediana e média).<br><br>
  * <a href="https://github.com/diegoemoyses/Mainframe-Assembly/blob/main/CONTDSN.asm">CONTDSN.asm</a>&nbsp;&nbsp;&nbsp; - Verifica a quantidade de registros no dsn  em ARQ e exibe o valor em SYSPRINT.<br><br> 
