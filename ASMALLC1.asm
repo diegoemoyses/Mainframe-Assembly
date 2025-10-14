@@ -37,8 +37,6 @@ READENTR EQU   *
          BAL   R9,UNLLOCN
          BAL   R9,ALLOCNEW
          B     READENTR
-*        BE    UNLLOCN
-*        B     READENTR
 *
 UNLLOCN  EQU   *
          CLOSE (SAIDA)
@@ -50,9 +48,6 @@ UNLLOCN  EQU   *
          MVC   SPRINT+34(2),QTDREG
          PUT   SYSPRINT,SPRINT
          BR    R9
-*
-*        BAL   R9,ALLOCNEW
-*        B     READENTR
 *
 ALLOCNEW EQU   *
          AP    NAP,=P'1'
