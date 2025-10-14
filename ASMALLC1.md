@@ -1,4 +1,4 @@
-## Programa em Assembly Mainframe para demonstrar o uso da macro BPXWDYN
+## Programa em Assembler Mainframe para demonstrar o uso da macro BPXWDYN
 
 
 #### Informações sobre a macro BPXWDYN podem ser encontradas no link abaixo
