@@ -5,7 +5,7 @@
 //* EXECUTA PGM ASSEMBLER CONTDSN                                      
 //*------------------------------------------------------------------* 
 //STEP001  EXEC PGM=CONTDSN                                            
-//STEPLIB  DD   DSN=ADCD.LOAD,DISP=SHR                                
+//STEPLIB  DD   DSN=ADCD.USERLOAD,DISP=SHR                                
 //SYSPRINT DD   SYSOUT=*                                               
 //ARQ      DD   DSN=ADCD.ENTRADA.DADOS,DISP=SHR
 //*------------------------------------------------------------------*  
