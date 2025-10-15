@@ -11,7 +11,7 @@ https://www.ibm.com/docs/en/zos/2.4.0?topic=output-requesting-allocation-informa
 * <a href="https://github.com/diegoemoyses/Mainframe-Assembly/blame/main/JOBPXWDY.jcl">JOBPXWDY.jcl</a>  - Job em JCL contendo:
 
   <strong>Step01</strong> - Execução do programa  <a href="https://github.com/diegoemoyses/Mainframe-Assembly/blame/main/CONTDSN.asm">CONTDSN</a> para exibir a quantidade de registros para fim de comparação.<br><br>
- <strong> Step02</strong> - Execução do programa  <a href="https://github.com/diegoemoyses/Mainframe-Assembly/blame/main/ASMALLC1.asm">ASMALLC1</a> aonde os dados do arquivo ENTRADA serão dividos, neste exemplo, em 70 registros por arquivo.
+ <strong> Step02</strong> - Execução do programa  <a href="https://github.com/diegoemoyses/Mainframe-Assembly/blame/main/ASMALLC1.asm">ASMALLC1</a> aonde os dados do arquivo ENTRADA serão divididos, neste exemplo, em 70 registros por arquivo.
 
 <br><br>
 
